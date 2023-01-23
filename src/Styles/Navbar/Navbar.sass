@@ -1,0 +1,56 @@
+@import "../Variables/Variables.sass"
+@import "../Functions/Functions.sass"
+
+    
+.navbar
+    @include space(100%, 5.5rem)
+    @include place(0, 0)
+    position: fixed
+    top: 0
+    z-index: 5
+    display: grid
+    grid-template-columns: 10% 90%
+    background-color: $blueColor
+    box-shadow:  0px 0px 10px 8px $blueColor
+        
+    
+
+.logo
+    @include center()
+    font-size: 2rem
+
+    h1
+        margin: 0
+        font-family: $imFellStyle
+        
+        @media screen and ( max-width:  $maxWidth)
+            margin-left: 1rem
+
+ul
+    @include place(0 5rem, 0)
+    display: flex
+    list-style: none
+    justify-content: end
+    gap: 20px   
+    font-family: $neutonStyle
+    
+    @media screen and (max-width: $maxWidth)
+        @include place(0, 0)
+        gap: 10px
+
+    li
+        @include place(0.5rem 1rem, 0)
+        @include center()
+        cursor: pointer
+        transition: 0.5s
+
+        &:hover
+            font-size: 1.1rem
+
+        @media screen and (max-width: $maxWidth)
+            @include place(0.3rem 0.5rem, 0)
+            font-size: 0.7rem
+
+a
+    text-decoration: none
+    color: $whiteColor

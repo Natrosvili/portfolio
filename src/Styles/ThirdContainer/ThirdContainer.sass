@@ -1,0 +1,48 @@
+@import "../Functions/Functions.sass"
+@import "../Variables/Variables.sass"
+@import "../ProjectContainer/ProjectContainer.sass"
+
+.thiContainer
+    @include place(0, 0)
+
+    .projects
+        @include place(0, 0)
+        text-align: center
+        font-size: 2rem
+        font-family: $neutonStyle
+
+    hr
+        @include space(5%, 0.5rem)
+        border: none
+        border-radius: 10px
+        background-color: $lightblueColor
+
+
+.gridProjects
+    @include center()
+    @include place(12rem 0, 0)
+    grid-template-rows: repeat(2, 80%)
+    grid-template-columns: repeat(3, 20%)
+    gap: 15px
+    color: $whiteColor
+
+    @media screen and ( max-width: $maxWidth)
+        grid-template-rows: repeat(2, 85%)
+        grid-template-columns: repeat(3, 30%)
+        gap: 8px
+        
+
+
+.coming-soon-container
+    @extend .project
+    @include center()
+    grid-column: 2 / -2
+
+.more-coming-soon
+    transform: rotate(-48.03deg)
+    z-index: 0
+
+    @media screen and ( max-width: $maxWidth)
+        @include place(0, 0)
+        font-size: 0.9rem
+        transform: rotate(-60deg)

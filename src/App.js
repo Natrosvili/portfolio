@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./components/Navbar";
+import "./Styles/App/App.css"
+import FirstContainer from "./components/FirstContainer";
+import SecondContainer from "./components/SecondContainer";
+import ThirdContainer from "./components/ThirdContainer";
+import ForthContainer from "./components/ForthContainer";
 
-function App() {
+import Footer from "./components/Footer";
+
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <FirstContainer />
+      <SecondContainer />
+      <ThirdContainer />
+      <ForthContainer />
+      <Footer />
     </div>
   );
 }
-
-export default App;

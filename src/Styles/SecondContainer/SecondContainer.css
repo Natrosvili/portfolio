@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+English&family=Neuton:wght@200&display=swap");
+.s-container {
+  margin: 0;
+  padding: 0;
+}
+.s-container .about {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  font-family: "Neuton", serif;
+}
+.s-container hr {
+  width: 5%;
+  height: 0.5rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #158999;
+}
+
+.gridbox {
+  display: grid;
+  place-content: center;
+  margin: 5rem 0;
+  padding: 0;
+  row-gap: 10px;
+  grid-template-columns: repeat(2, 40%);
+  grid-template-rows: repeat(2, 50%);
+}
+@media screen and (max-width: 430px) {
+  .gridbox {
+    margin: 7rem 0;
+    padding: 0;
+    grid-template-rows: repeat(2, 70%);
+  }
+}
+
+.infoContainer {
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 430px) {
+  .imageContainer {
+    align-items: center;
+    justify-content: start;
+  }
+}
+
+.infoContainer {
+  font-family: "Neuton", serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+@media screen and (max-width: 430px) {
+  .infoContainer {
+    font-size: 0.8rem;
+  }
+}
+
+img {
+  width: 22rem;
+  height: 22rem;
+}
+@media screen and (max-width: 430px) {
+  img {
+    width: 12rem;
+    height: 12rem;
+  }
+}
+
+.skillsContainer {
+  display: grid;
+  grid-template-rows: 15% 75%;
+}
+@media screen and (max-width: 430px) {
+  .skillsContainer {
+    grid-template-rows: 15% 50%;
+  }
+}
+.skillsContainer h2 {
+  margin: 0 0 1rem 1.5rem;
+  padding: 0;
+  text-align: left;
+  font-family: "Neuton", serif;
+}
+
+@-webkit-keyframes backgroundColorForSkills {
+  0% {
+    background-color: #158999;
+  }
+  50% {
+    background-color: #385D95;
+  }
+  100% {
+    background-color: #158999;
+  }
+}
+
+@keyframes backgroundColorForSkills {
+  0% {
+    background-color: #158999;
+  }
+  50% {
+    background-color: #385D95;
+  }
+  100% {
+    background-color: #158999;
+  }
+}
+.skills {
+  display: grid;
+  justify-content: start;
+  gap: 10px;
+  grid-template-columns: repeat(5, 18%);
+}
+@media screen and (max-width: 430px) {
+  .skills {
+    grid-template-columns: repeat(5, 20%);
+  }
+}
+.skills div {
+  display: grid;
+  place-content: center;
+  background-color: #158999;
+  border-radius: 10px;
+  color: #ffffff;
+  -webkit-animation-name: backgroundColorForSkills;
+          animation-name: backgroundColorForSkills;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.skills div p {
+  margin: 0;
+  padding: 0;
+  font-family: "IM Fell English", serif;
+}
+@media screen and (max-width: 430px) {
+  .skills div p {
+    font-size: 0.8rem;
+  }
+}/*# sourceMappingURL=SecondContainer.css.map */

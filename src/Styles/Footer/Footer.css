@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+English&family=Neuton:wght@200&display=swap");
+footer {
+  display: grid;
+  place-content: center;
+  margin: 0;
+  padding: 1rem 0;
+  grid-template-columns: 40%;
+  text-align: center;
+  background-color: #158999;
+  color: #ffffff;
+  font-family: "IM Fell English", serif;
+}
+@media screen and (max-width: 430px) {
+  footer {
+    grid-template-columns: 80%;
+  }
+}
+
+.heading {
+  margin: 0;
+  padding: 0;
+}
+
+.info {
+  margin: 1.2rem;
+  padding: 0;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+}/*# sourceMappingURL=Footer.css.map */

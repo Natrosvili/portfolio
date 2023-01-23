@@ -1,0 +1,25 @@
+@import "../Variables/Variables.sass"
+@import "../Functions/Functions.sass"
+
+footer
+    @include center()
+    @include place(0, 1rem 0)
+    grid-template-columns: 40%
+    text-align: center
+    background-color: $lightblueColor
+    color: $whiteColor
+    font-family: $imFellStyle
+
+    @media screen and (max-width: 430px)
+        grid-template-columns: 80%
+        
+
+.heading
+    @include place(0, 0)
+
+.info
+    @include place($fontSize, 0)
+
+.icons
+    display: flex
+    justify-content: space-evenly

@@ -1,0 +1,112 @@
+@import "../Variables/Variables.sass"
+@import "../Functions/Functions.sass"
+
+.f-container
+    @include space(100%, 90vh)
+    @include place(5rem 0, 0)
+    @include center()
+    text-align: center
+    color: $whiteColor
+    @media screen and ( max-width: $maxWidth)
+        @include place(4rem 0, 0)
+        
+
+
+
+
+.background-image
+    background-image: url("/public/clouds.jpg")
+    background-repeat: no-repeat
+    background-attachment: fixed
+    background-size: cover
+    background-position: center
+
+@keyframes animation1
+    0%
+        letter-spacing: 1em
+        filter: blur(12px)
+        opacity: 0
+
+    100%
+        filter: blur(0)
+        opacity: 1
+
+.intro
+    @include place(0, 10rem)
+    font-weight: bold
+    animation-name: animation1
+    animation-duration: 1.5s
+    animation-timing-function: ease
+    animation-delay: 0s
+    animation-iteration-count: 1
+    animation-direction: normal
+    animation-fill-mode: none
+
+    @media screen and (max-width: $maxWidth) 
+        @include place(0, 0)
+
+
+    .heading, p, a
+        font-family: $neutonStyle            
+    
+    .heading
+        @include place(1rem, 0)
+        font-size: 5rem
+        animation-name: animation1
+		animation-duration: 1.5s
+		animation-timing-function: ease
+		animation-delay: 0.5s
+		animation-iteration-count: 1
+		animation-direction: normal
+		animation-fill-mode: none
+
+
+        @media screen and ( max-width:  430px)
+            font-size: 3rem
+            
+    
+    p
+        @include place(2rem, 0 12rem)
+        font-size: 1.8rem
+        animation-name: animation1
+		animation-duration: 1.5s
+		animation-timing-function: ease
+		animation-delay: 1s
+		animation-iteration-count: 1
+		animation-direction: normal
+		animation-fill-mode: none
+
+        @media screen and ( max-width: 430px)
+            @include place(2rem, 0)
+            font-size: 1rem
+
+            
+
+    #about
+        @include place(3rem 1rem, 0.6rem 2rem)
+        @include space(12rem, 3rem)
+        border: none
+        font-weight: bold
+        border-radius: 20px
+        background-color: $lightblueColor
+        color: $whiteColor
+        font-size: 1.5rem
+        transition: 0.4s
+        animation-name: animation1
+		animation-duration: 1s
+		animation-timing-function: ease
+		animation-delay: 1.5s
+		animation-iteration-count: 1
+		animation-direction: normal
+		animation-fill-mode: none
+
+        &:hover
+            font-size: 1.7rem
+
+        @media screen and ( max-width: $maxWidth)
+            @include place(2rem 1rem, 0.7rem 1.5rem)
+            font-size: $fontSize
+            
+        
+
+    

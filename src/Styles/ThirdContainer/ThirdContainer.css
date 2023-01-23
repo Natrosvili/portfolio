@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+English&family=Neuton:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+English&family=Neuton:wght@200&display=swap");
+.project, .coming-soon-container {
+  background-color: #385D95;
+  border-radius: 15px;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+}
+.project:hover, .coming-soon-container:hover {
+  box-shadow: #385D95 0px 3px 6px, #385D95 0px 3px 6px;
+}
+
+.image {
+  width: 99%;
+  height: 30%;
+  margin: 1rem 0 0 0;
+  padding: 0;
+  transition: 0.5s ease-in-out;
+}
+@media screen and (max-width: 430px) {
+  .image {
+    width: 100%;
+    height: 20%;
+  }
+}
+.image:hover {
+  width: 100%;
+  height: 32%;
+  margin: 0.5rem 0 0 0;
+  padding: 0;
+}
+@media screen and (max-width: 430px) {
+  .image:hover {
+    width: 100%;
+    height: 25%;
+  }
+}
+
+.tech, .project-info {
+  margin: 0.8rem 0 0.2rem;
+  padding: 0 0.8rem;
+  font-family: "Neuton", serif;
+  font-size: 1rem;
+}
+@media screen and (max-width: 430px) {
+  .tech, .project-info {
+    margin: 0;
+    padding: 0;
+    font-size: 0.6rem;
+  }
+}
+
+span {
+  margin: 5rem 0;
+  padding: 0.4rem 0.2rem;
+  background-color: #158999;
+  border-radius: 10px;
+  color: #ffffff;
+  font-family: "IM Fell English", serif;
+  line-height: 2.3rem;
+}
+
+.thiContainer {
+  margin: 0;
+  padding: 0;
+}
+.thiContainer .projects {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Neuton", serif;
+}
+.thiContainer hr {
+  width: 5%;
+  height: 0.5rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #158999;
+}
+
+.gridProjects {
+  display: grid;
+  place-content: center;
+  margin: 12rem 0;
+  padding: 0;
+  grid-template-rows: repeat(2, 80%);
+  grid-template-columns: repeat(3, 20%);
+  gap: 15px;
+  color: #ffffff;
+}
+@media screen and (max-width: 430px) {
+  .gridProjects {
+    grid-template-rows: repeat(2, 85%);
+    grid-template-columns: repeat(3, 30%);
+    gap: 8px;
+  }
+}
+
+.coming-soon-container {
+  display: grid;
+  place-content: center;
+  grid-column: 2/-2;
+}
+
+.more-coming-soon {
+  transform: rotate(-48.03deg);
+  z-index: 0;
+}
+@media screen and (max-width: 430px) {
+  .more-coming-soon {
+    margin: 0;
+    padding: 0;
+    font-size: 0.9rem;
+    transform: rotate(-60deg);
+  }
+}/*# sourceMappingURL=ThirdContainer.css.map */

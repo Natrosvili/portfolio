@@ -1,0 +1,52 @@
+@import "../Functions/Functions.sass"
+@import "../Variables/Variables.sass"
+
+.foContainer
+    @include place(5rem 0, 0)
+    @include space(100%, 100%)
+    text-align: center
+    font-family: $neutonStyle
+    
+    .contact
+        @include place(0, 0)
+        font-size: 2rem
+    
+    hr
+        @include space(5%, 0.5rem)
+        border: none
+        border-radius: 10px
+        background-color: $lightblueColor
+
+
+.opp, .question
+    @include place(1.5rem 0, 0 30rem)
+    font-size: $fontSize
+    font-weight: bold
+    @media screen and ( max-width: $maxWidth)
+        @include place(1rem 2rem, 0 2rem)
+        font-size: 1rem
+        
+        
+
+.inTouch
+    @include place(0, 0)
+    font-size: 1.8rem
+    color: $lightblueColor
+
+.contactMe
+    @include place(3rem 1rem, 0.6rem 2rem)
+    font-size: $fontSize
+    border: none
+    font-weight: bold
+    border-radius: 15px
+    background-color: $lightblueColor
+    color: $whiteColor
+    transition: 0.4s
+
+    &:hover
+        font-size: 1.3rem
+
+    @media screen and ( max-width: $maxWidth)
+        @include place(2rem 1rem, 0.5rem 1.5rem)
+        border-radius: 12px        
+        

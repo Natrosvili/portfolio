@@ -1,0 +1,43 @@
+@import "../Functions/Functions.sass"
+@import "../Variables/Variables.sass"
+
+.project
+    background-color: $blueColor
+    border-radius: 15px
+    text-align: center
+    transition: 0.5s ease-in-out
+    
+    &:hover
+        box-shadow: $blueColor 0px 3px 6px, $blueColor 0px 3px 6px
+        
+.image
+    @include space(99%, 30%)
+    @include place(1rem 0 0 0, 0)
+    transition: 0.5s ease-in-out
+
+    @media screen and ( max-width: $maxWidth)
+        @include space(100%, 20%)
+
+    &:hover
+        @include space(100%, 32%)
+        @include place(0.5rem 0 0 0, 0)
+        @media screen and ( max-width:  $maxWidth)
+            @include space(100%, 25%)
+
+    
+.tech, .project-info
+    @include place(0.8rem 0 0.2rem, 0 0.8rem)    
+    font-family: $neutonStyle
+    font-size: 1rem
+    
+    @media screen and (max-width: $maxWidth)
+        @include place(0, 0)
+        font-size: 0.6rem
+
+span
+    @include place(5rem 0, 0.4rem 0.2rem)
+    background-color: $lightblueColor
+    border-radius: 10px
+    color: $whiteColor
+    font-family: $imFellStyle
+    line-height: 2.3rem

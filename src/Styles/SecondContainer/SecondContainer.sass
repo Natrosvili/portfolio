@@ -1,0 +1,111 @@
+@import "../Variables/Variables.sass"
+@import "../Functions/Functions.sass"
+
+.s-container
+    @include place(0, 0)
+
+    .about
+        text-align: center
+        font-size: 2rem
+        @include place(0, 0)
+        font-family: $neutonStyle
+
+    hr
+        @include space(5%, 0.5rem)
+        border: none
+        border-radius: 10px
+        background-color: $lightblueColor
+
+.gridbox
+    @include center()
+    @include place(5rem 0, 0)
+    row-gap: 10px
+    grid-template-columns: repeat(2, 40%)
+    grid-template-rows: repeat(2, 50%)
+
+    @media screen and ( max-width: $maxWidth)
+        @include place(7rem 0, 0)
+        grid-template-rows: repeat(2, 70%)
+        
+
+.infoContainer
+    @include center()
+    text-align: center
+
+.imageContainer
+    display: flex
+    justify-content: center
+    @media screen and ( max-width:  $maxWidth)
+        align-items: center
+        justify-content: start
+
+.infoContainer
+    font-family: $neutonStyle
+    font-size: $fontSize
+    font-weight: bold
+    @media screen and ( max-width:  $maxWidth)
+        font-size: 0.8rem
+        
+
+
+img
+    @include space(22rem, 22rem)
+
+    @media screen and ( max-width: $maxWidth)
+        @include space(12rem, 12rem)
+        
+
+.skillsContainer
+    display: grid
+    grid-template-rows: 15% 75%
+    
+    @media screen and ( max-width: $maxWidth)
+        grid-template-rows: 15% 50%
+
+    h2
+        @include place(0 0 1rem 1.5rem, 0)
+        text-align: left
+        font-family: $neutonStyle
+            
+
+@keyframes backgroundColorForSkills 
+    0%
+        background-color: $lightblueColor
+    50% 
+        background-color: $blueColor
+    100%
+        background-color: $lightblueColor
+
+
+.skills
+    display: grid
+    justify-content: start
+    gap: 10px
+    grid-template-columns: repeat(5, 18%)
+    @media screen and ( max-width:  $maxWidth)
+        grid-template-columns: repeat(5, 20%)
+        
+
+    div 
+        @include center()
+        background-color: $lightblueColor
+        border-radius: 10px
+        color: $whiteColor
+        animation-name: backgroundColorForSkills
+        animation-timing-function: linear
+        animation-iteration-count: infinite
+        animation-duration: 3s
+        animation-fill-mode: forwards
+
+        p
+            @include place(0, 0)
+            font-family: $imFellStyle
+            
+            @media screen and (max-width: $maxWidth)
+                font-size: 0.8rem
+
+
+
+
+
+
