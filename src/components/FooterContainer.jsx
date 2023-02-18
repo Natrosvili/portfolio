@@ -1,8 +1,6 @@
-import React from "react";
+import React, {useEffect, useState}  from "react";
 import { Icon } from '@iconify/react';
 import "../Styles/Footer/Footer.css"
-import {useEffect, useState} from "react";
-
 
 export default function Footer() {
 

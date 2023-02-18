@@ -1,7 +1,7 @@
 import React from "react";
-import "../Styles/FirstContaiener/FirstContainer.css"
+import "../Styles/IntroContainer/IntroContainer.css"
 
-export default function FirstContainer() {
+export default function IntroContainer() {
     return (
         <section className="f-container background-image">
             <div className="intro">

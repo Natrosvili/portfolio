@@ -12,27 +12,27 @@
 
 .image {
   width: 99%;
-  height: 30%;
+  height: 40%;
   margin: 1rem 0 0 0;
   padding: 0;
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 @media screen and (max-width: 430px) {
   .image {
     width: 100%;
-    height: 20%;
+    height: 30%;
   }
 }
 .image:hover {
   width: 100%;
-  height: 32%;
+  height: 45%;
   margin: 0.5rem 0 0 0;
   padding: 0;
 }
 @media screen and (max-width: 430px) {
   .image:hover {
     width: 100%;
-    height: 25%;
+    height: 35%;
   }
 }
 
@@ -46,11 +46,11 @@
   .tech, .project-info {
     margin: 0;
     padding: 0;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 }
 
-span {
+.tech span {
   margin: 5rem 0;
   padding: 0.4rem 0.2rem;
   background-color: #158999;
@@ -58,6 +58,16 @@ span {
   color: #ffffff;
   font-family: "IM Fell English", serif;
   line-height: 2.3rem;
+}
+
+.frontend-mentor-link {
+  font-style: italic;
+  color: #158999;
+}
+
+.icon {
+  margin: 0.3rem 0 0 0;
+  padding: 0;
 }
 
 .thiContainer {
@@ -82,17 +92,19 @@ span {
 .gridProjects {
   display: grid;
   place-content: center;
-  margin: 12rem 0;
+  margin: 1rem 0;
   padding: 0;
-  grid-template-rows: repeat(2, 80%);
+  grid-template-rows: repeat(2, 45%);
   grid-template-columns: repeat(3, 20%);
   gap: 15px;
   color: #ffffff;
 }
 @media screen and (max-width: 430px) {
   .gridProjects {
-    grid-template-rows: repeat(2, 85%);
-    grid-template-columns: repeat(3, 30%);
+    margin: 6rem 0;
+    padding: 0;
+    grid-template-rows: repeat(2, 57%);
+    grid-template-columns: repeat(3, 28%);
     gap: 8px;
   }
 }
@@ -100,7 +112,6 @@ span {
 .coming-soon-container {
   display: grid;
   place-content: center;
-  grid-column: 2/-2;
 }
 
 .more-coming-soon {
@@ -114,4 +125,4 @@ span {
     font-size: 0.9rem;
     transform: rotate(-60deg);
   }
-}/*# sourceMappingURL=ThirdContainer.css.map */
+}/*# sourceMappingURL=ProjectsContainer.css.map */

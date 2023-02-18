@@ -25,12 +25,15 @@
 
     @media screen and ( max-width: $maxWidth)
         @include place(7rem 0, 0)
+        grid-template-columns: repeat(2, 45%)
         grid-template-rows: repeat(2, 70%)
+        gap: 0
         
 
 .infoContainer
-    @include center()
     text-align: center
+    @media screen and (max-width: $maxWidth) 
+        text-align: left
 
 .imageContainer
     display: flex
@@ -40,16 +43,17 @@
         justify-content: start
 
 .infoContainer
-    font-family: $neutonStyle
-    font-size: $fontSize
-    font-weight: bold
+    font:
+        family: $neutonStyle
+        size: $fontSize
+        weight: bold
     @media screen and ( max-width:  $maxWidth)
         font-size: 0.8rem
         
 
 
 img
-    @include space(22rem, 22rem)
+    @include space(20rem, 18rem)
 
     @media screen and ( max-width: $maxWidth)
         @include space(12rem, 12rem)

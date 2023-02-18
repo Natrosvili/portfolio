@@ -1,7 +1,7 @@
 import React from "react";
-import "../Styles/ForthContainer/ForthContainer.css"
+import "../Styles/ContactContainer/ContactContainer.css"
 
-export default function ForthContainer() {
+export default function ContactContainer() {
     return (
         <section id="contact" className="foContainer">
             <h2 className="contact">🤙 Contact</h2>

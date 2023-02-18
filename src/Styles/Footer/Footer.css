@@ -20,6 +20,11 @@ footer {
   margin: 0;
   padding: 0;
 }
+@media screen and (max-width: 430px) {
+  .heading {
+    font-size: 1.2rem;
+  }
+}
 
 .info {
   margin: 1.2rem;

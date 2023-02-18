@@ -1,21 +1,20 @@
-import Navbar from "./components/Navbar";
+import NavbarContainer from "./components/NavbarContainer";
 import "./Styles/App/App.css"
-import FirstContainer from "./components/FirstContainer";
-import SecondContainer from "./components/SecondContainer";
-import ThirdContainer from "./components/ThirdContainer";
-import ForthContainer from "./components/ForthContainer";
-
-import Footer from "./components/Footer";
+import AboutContainer from "./components/AboutContainer";
+import IntroContainer from "./components/IntroContainer";
+import ProjectsContainer from "./components/ProjectsContainer";
+import ContactContainer from "./components/ContactContainer";
+import FooterContainer from "./components/FooterContainer";
 
 export default function App() {
   return (
     <div className="App">
-      <Navbar />
-      <FirstContainer />
-      <SecondContainer />
-      <ThirdContainer />
-      <ForthContainer />
-      <Footer />
+      <NavbarContainer />
+      <IntroContainer />
+      <AboutContainer />
+      <ProjectsContainer />
+      <ContactContainer />
+      <FooterContainer />
     </div>
   );
 }

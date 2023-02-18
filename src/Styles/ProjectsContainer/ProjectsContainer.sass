@@ -1,6 +1,6 @@
 @import "../Functions/Functions.sass"
 @import "../Variables/Variables.sass"
-@import "../ProjectContainer/ProjectContainer.sass"
+@import "../ProjectCard/ProjectCard.sass"
 
 .thiContainer
     @include place(0, 0)
@@ -20,15 +20,16 @@
 
 .gridProjects
     @include center()
-    @include place(12rem 0, 0)
-    grid-template-rows: repeat(2, 80%)
+    @include place(1rem 0, 0)
+    grid-template-rows: repeat(2, 45%)
     grid-template-columns: repeat(3, 20%)
     gap: 15px
     color: $whiteColor
 
     @media screen and ( max-width: $maxWidth)
-        grid-template-rows: repeat(2, 85%)
-        grid-template-columns: repeat(3, 30%)
+        @include place(6rem 0, 0)
+        grid-template-rows: repeat(2, 57%)
+        grid-template-columns: repeat(3, 28%)
         gap: 8px
         
 
@@ -36,7 +37,6 @@
 .coming-soon-container
     @extend .project
     @include center()
-    grid-column: 2 / -2
 
 .more-coming-soon
     transform: rotate(-48.03deg)

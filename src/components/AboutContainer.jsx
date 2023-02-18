@@ -1,7 +1,7 @@
 import React from "react";
-import "../Styles/SecondContainer/SecondContainer.css"
+import "../Styles/AboutContainer/AboutContainer.css"
 
-export default function SecondContainer() {
+export default function AboutContainer() {
     return (
         <section className="s-container">
             <div id="about"></div>

@@ -17,6 +17,9 @@ footer
 .heading
     @include place(0, 0)
 
+    @media screen and (max-width: $maxWidth) 
+        font-size: $fontSize
+
 .info
     @include place($fontSize, 0)
 

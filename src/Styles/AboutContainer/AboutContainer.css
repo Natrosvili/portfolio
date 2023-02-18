@@ -31,14 +31,19 @@
   .gridbox {
     margin: 7rem 0;
     padding: 0;
+    grid-template-columns: repeat(2, 45%);
     grid-template-rows: repeat(2, 70%);
+    gap: 0;
   }
 }
 
 .infoContainer {
-  display: grid;
-  place-content: center;
   text-align: center;
+}
+@media screen and (max-width: 430px) {
+  .infoContainer {
+    text-align: left;
+  }
 }
 
 .imageContainer {
@@ -64,8 +69,8 @@
 }
 
 img {
-  width: 22rem;
-  height: 22rem;
+  width: 20rem;
+  height: 18rem;
 }
 @media screen and (max-width: 430px) {
   img {
@@ -88,18 +93,6 @@ img {
   padding: 0;
   text-align: left;
   font-family: "Neuton", serif;
-}
-
-@-webkit-keyframes backgroundColorForSkills {
-  0% {
-    background-color: #158999;
-  }
-  50% {
-    background-color: #385D95;
-  }
-  100% {
-    background-color: #158999;
-  }
 }
 
 @keyframes backgroundColorForSkills {
@@ -130,16 +123,11 @@ img {
   background-color: #158999;
   border-radius: 10px;
   color: #ffffff;
-  -webkit-animation-name: backgroundColorForSkills;
-          animation-name: backgroundColorForSkills;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-name: backgroundColorForSkills;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 .skills div p {
   margin: 0;
@@ -150,4 +138,4 @@ img {
   .skills div p {
     font-size: 0.8rem;
   }
-}/*# sourceMappingURL=SecondContainer.css.map */
+}/*# sourceMappingURL=AboutContainer.css.map */

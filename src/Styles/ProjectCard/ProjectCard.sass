@@ -11,18 +11,19 @@
         box-shadow: $blueColor 0px 3px 6px, $blueColor 0px 3px 6px
         
 .image
-    @include space(99%, 30%)
+    @include space(99%, 40%)
     @include place(1rem 0 0 0, 0)
-    transition: 0.5s ease-in-out
+    transition: 0.3s ease-in-out
 
     @media screen and ( max-width: $maxWidth)
-        @include space(100%, 20%)
+        @include space(100%, 30%)
 
     &:hover
-        @include space(100%, 32%)
+        @include space(100%, 45%)
         @include place(0.5rem 0 0 0, 0)
+
         @media screen and ( max-width:  $maxWidth)
-            @include space(100%, 25%)
+            @include space(100%, 35%)
 
     
 .tech, .project-info
@@ -32,12 +33,20 @@
     
     @media screen and (max-width: $maxWidth)
         @include place(0, 0)
-        font-size: 0.6rem
+        font-size: 0.8rem
 
-span
-    @include place(5rem 0, 0.4rem 0.2rem)
-    background-color: $lightblueColor
-    border-radius: 10px
-    color: $whiteColor
-    font-family: $imFellStyle
-    line-height: 2.3rem
+.tech
+    span
+        @include place(5rem 0, 0.4rem 0.2rem)
+        background-color: $lightblueColor
+        border-radius: 10px
+        color: $whiteColor
+        font-family: $imFellStyle
+        line-height: 2.3rem
+
+.frontend-mentor-link
+    font-style: italic
+    color: $lightblueColor
+
+.icon
+    @include place(0.3rem 0 0 0, 0)

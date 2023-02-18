@@ -11,15 +11,17 @@
         @include place(4rem 0, 0)
         
 
-
-
-
 .background-image
     background-image: url("/public/clouds.jpg")
     background-repeat: no-repeat
     background-attachment: fixed
     background-size: cover
     background-position: center
+
+    @media screen and (max-width: $maxWidth)
+        background-attachment: scroll
+        background-position: right
+        
 
 @keyframes animation1
     0%
@@ -35,7 +37,7 @@
     @include place(0, 10rem)
     font-weight: bold
     animation-name: animation1
-    animation-duration: 1.5s
+    animation-duration: 1
     animation-timing-function: ease
     animation-delay: 0s
     animation-iteration-count: 1
@@ -104,7 +106,7 @@
             font-size: 1.7rem
 
         @media screen and ( max-width: $maxWidth)
-            @include place(2rem 1rem, 0.7rem 1.5rem)
+            @include place(1rem 1rem, 0.5rem 1rem)
             font-size: $fontSize
             
         
